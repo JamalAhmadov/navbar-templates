@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(105, 104, 104);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  gap: 10px;
+}
+header ul li a {
+  font-size: 14px !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+header ul li:hover a {
+  color: rgb(179, 32, 32) !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #1E1E1E;
+}
+.dropdown:hover .dropdown-menu a {
+  color: white !important;
+  background-color: #1E1E1E;
+}
+.dropdown:hover .dropdown-menu a:hover {
+  color: rgb(179, 32, 32) !important;
+}
+
+@media screen and (max-width: 991px) {
+  .navContainer {
+    width: 100% !important;
+  }
+  .navContainer .navbar-nav {
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+  }
+}

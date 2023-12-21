@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+body {
+  background-color: rgb(105, 104, 104);
+  font-family: "Poppins", sans-serif;
+}
+
+.hedaer-top {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+.hedaer-top .logo {
+  font-size: 25px;
+}
+.hedaer-top .conactBox {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+.hedaer-top .conactBox .contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.hedaer-top .conactBox .contact i {
+  font-size: 30px;
+}
+.hedaer-top .conactBox .contact .contactWay {
+  display: flex;
+  flex-direction: column;
+}
+.hedaer-top .conactBox .contact .contactWay .conactText {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.hedaer-bottom {
+  display: flex;
+  align-items: center;
+  background-color: #343A40;
+  width: 100%;
+  min-height: 70px;
+}
+.hedaer-bottom li a {
+  color: rgb(255, 255, 255) !important;
+  opacity: 0.7;
+}
+.hedaer-bottom li a:hover {
+  opacity: 1;
+}
+.hedaer-bottom li .dropdown-menu a {
+  color: black !important;
+}
+.hedaer-bottom form * {
+  border-radius: 0px !important;
+  color: white !important;
+}
+.hedaer-bottom form .logbutton {
+  background-color: #669C19;
+  margin: 0px 5px;
+}
+.hedaer-bottom form .logbutton:hover {
+  background-color: #3d541e;
+}
+.hedaer-bottom form .regbutton {
+  border: 1px #669C19 solid;
+  margin: 0px 5px;
+}
+.hedaer-bottom form .regbutton:hover {
+  background-color: #669C19;
+}
+
+@media only screen and (max-width: 992px) {
+  .hedaer-top .conactBox span {
+    display: none;
+  }
+  .offcanvas li a {
+    color: black !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .dropdown:hover > .dropdown-menu,
+  .dropend:hover > .dropdown-menu {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 0px;
+  }
+  .dropdown:hover > .dropdown-menu a:hover,
+  .dropend:hover > .dropdown-menu a:hover {
+    color: rgb(39, 146, 48) !important;
+  }
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+}
